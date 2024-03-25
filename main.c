@@ -3,14 +3,15 @@
 
 int main()
 {
-    int a, b, c, d;
-    printf("Enter the first value: \n");
-    scanf("%d", &a);
-     printf("Enter the second value: \n");
-    scanf("%d", &b);
-     printf("Enter the third value: \n");
-    scanf("%d", &c);
-    d = a + b + c;
-    printf("%d + %d + %d = %d\n", a, b, c, d);
+    int a;
+    a = 0;
+    while (a <= 100)
+    {
+        printf("%4d Degrees F = %4d Degrees C\n",
+            a, (a-32)*5/9);
+            a = a + 10;
+        Scanf("%d", &a);
+
+    }
     return 0;
 }
